@@ -46,16 +46,18 @@ public class IGCalculadora extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jButton0 = new javax.swing.JButton();
         jButtonEqual = new javax.swing.JButton();
-        jButton18 = new javax.swing.JButton();
+        jButtonPorcent = new javax.swing.JButton();
         jButtonPoint = new javax.swing.JButton();
 
         jButton17.setText("jButton17");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jPanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
 
         jTextField1.setText("0");
+        jTextField1.setEditable(false);
         jTextField1.setHorizontalAlignment(jTextField1.RIGHT);
 
         jButtonAC.setText("AC");
@@ -65,6 +67,7 @@ public class IGCalculadora extends javax.swing.JFrame {
             }
         });
 
+        jButtonMult.setBackground(new java.awt.Color(240, 64, 12));
         jButtonMult.setText("*");
         jButtonMult.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -73,12 +76,32 @@ public class IGCalculadora extends javax.swing.JFrame {
         });
 
         jButtonDiv.setText("/");
+        jButtonDiv.setBackground(new java.awt.Color(240, 64, 12));
+        jButtonDiv.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonDivActionPerformed(evt);
+            }
+        });
 
         jButtonSubt.setText("-");
+        jButtonSubt.setBackground(new java.awt.Color(240, 64, 12));
+        jButtonSubt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonSubtActionPerformed(evt);
+            }
+        });
 
         jButtonAdi.setText("+");
+        jButtonAdi.setBackground(new java.awt.Color(240, 64, 12));
+        jButtonAdi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonAdiActionPerformed(evt);
+            }
+        });
 
         jButton7.setText("7");
+        jButton7.setBackground(new java.awt.Color(0, 0, 0));
+        jButton7.setForeground(new java.awt.Color(240, 240, 240));
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
@@ -86,6 +109,8 @@ public class IGCalculadora extends javax.swing.JFrame {
         });
 
         jButton4.setText("4");
+        jButton4.setBackground(new java.awt.Color(0, 0, 0));
+        jButton4.setForeground(new java.awt.Color(240, 240, 240));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -93,6 +118,8 @@ public class IGCalculadora extends javax.swing.JFrame {
         });
 
         jButton1.setText("1");
+        jButton1.setBackground(new java.awt.Color(0, 0, 0));
+        jButton1.setForeground(new java.awt.Color(240, 240, 240));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -100,6 +127,8 @@ public class IGCalculadora extends javax.swing.JFrame {
         });
 
         jButton8.setText("8");
+        jButton8.setBackground(new java.awt.Color(0, 0, 0));
+        jButton8.setForeground(new java.awt.Color(240, 240, 240));
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton8ActionPerformed(evt);
@@ -107,6 +136,8 @@ public class IGCalculadora extends javax.swing.JFrame {
         });
 
         jButton2.setText("2");
+        jButton2.setBackground(new java.awt.Color(0, 0, 0));
+        jButton2.setForeground(new java.awt.Color(240, 240, 240));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -114,6 +145,8 @@ public class IGCalculadora extends javax.swing.JFrame {
         });
 
         jButton5.setText("5");
+        jButton5.setBackground(new java.awt.Color(0, 0, 0));
+        jButton5.setForeground(new java.awt.Color(240, 240, 240));
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
@@ -121,6 +154,8 @@ public class IGCalculadora extends javax.swing.JFrame {
         });
 
         jButton9.setText("9");
+        jButton9.setBackground(new java.awt.Color(0, 0, 0));
+        jButton9.setForeground(new java.awt.Color(240, 240, 240));
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton9ActionPerformed(evt);
@@ -128,6 +163,8 @@ public class IGCalculadora extends javax.swing.JFrame {
         });
 
         jButton6.setText("6");
+        jButton6.setBackground(new java.awt.Color(0, 0, 0));
+        jButton6.setForeground(new java.awt.Color(240, 240, 240));
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
@@ -135,6 +172,8 @@ public class IGCalculadora extends javax.swing.JFrame {
         });
 
         jButton3.setText("3");
+        jButton3.setBackground(new java.awt.Color(0, 0, 0));
+        jButton3.setForeground(new java.awt.Color(240, 240, 240));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -142,6 +181,8 @@ public class IGCalculadora extends javax.swing.JFrame {
         });
 
         jButton0.setText("0");
+        jButton0.setBackground(new java.awt.Color(0, 0, 0));
+        jButton0.setForeground(new java.awt.Color(240, 240, 240));
         jButton0.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton0ActionPerformed(evt);
@@ -149,13 +190,19 @@ public class IGCalculadora extends javax.swing.JFrame {
         });
 
         jButtonEqual.setText("=");
+        jButtonEqual.setBackground(new java.awt.Color(240, 64, 12));
         jButtonEqual.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonEqualActionPerformed(evt);
             }
         });
 
-        jButton18.setText("%");
+        jButtonPorcent.setText("%");
+        jButtonPorcent.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonPorcentActionPerformed(evt);
+            }
+        });
 
         jButtonPoint.setText(".");
         jButtonPoint.addActionListener(new java.awt.event.ActionListener() {
@@ -211,12 +258,14 @@ public class IGCalculadora extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(0, 1, Short.MAX_VALUE)
                                 .addComponent(jButtonAC, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButtonMult, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(55, Short.MAX_VALUE))
+                                .addComponent(jButtonPorcent, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(10, 10, 10)
+                                .addComponent(jButtonMult, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(8, 8, 8)))))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -225,7 +274,7 @@ public class IGCalculadora extends javax.swing.JFrame {
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton18, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButtonPorcent, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButtonAC, javax.swing.GroupLayout.DEFAULT_SIZE, 35, Short.MAX_VALUE)
                     .addComponent(jButtonMult, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -260,7 +309,7 @@ public class IGCalculadora extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -342,6 +391,85 @@ public class IGCalculadora extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButtonMultActionPerformed
 
+    private void jButtonAdiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAdiActionPerformed
+        jTextField1.setText(jTextField1.getText()+"+");
+        Calculadora c = new Calculadora();
+        int flag = 0;
+        for(int i=0; i<jTextField1.getText().length(); i++){
+            if(c.eOperador(jTextField1.getText().charAt(i))){
+                flag++;
+            }      
+        }
+        if(flag == 2){
+            String resultado, parcial;
+            parcial = jTextField1.getText().substring(0, jTextField1.getText().length()-1);
+            resultado = c.calcular(parcial);
+            jTextField1.setText(resultado + "+");
+        }
+    }//GEN-LAST:event_jButtonAdiActionPerformed
+
+    private void jButtonSubtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSubtActionPerformed
+        jTextField1.setText(jTextField1.getText()+"-");
+        Calculadora c = new Calculadora();
+        int flag = 0;
+        for(int i=0; i<jTextField1.getText().length(); i++){
+            if(c.eOperador(jTextField1.getText().charAt(i))){
+                flag++;
+            }      
+        }
+        if(flag == 2){
+            String resultado, parcial;
+            parcial = jTextField1.getText().substring(0, jTextField1.getText().length()-1);
+            resultado = c.calcular(parcial);
+            jTextField1.setText(resultado + "-");
+        }
+    }//GEN-LAST:event_jButtonSubtActionPerformed
+
+    private void jButtonDivActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDivActionPerformed
+        jTextField1.setText(jTextField1.getText()+"/");
+        Calculadora c = new Calculadora();
+        int flag = 0;
+        for(int i=0; i<jTextField1.getText().length(); i++){
+            if(c.eOperador(jTextField1.getText().charAt(i))){
+                flag++;
+            }      
+        }
+        if(flag == 2){
+            String resultado, parcial;
+            parcial = jTextField1.getText().substring(0, jTextField1.getText().length()-1);
+            resultado = c.calcular(parcial);
+            jTextField1.setText(resultado + "/");
+        }
+    }//GEN-LAST:event_jButtonDivActionPerformed
+
+    private void jButtonPorcentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPorcentActionPerformed
+        Calculadora c = new Calculadora();
+        int flag = 0;
+        for(int i=0; i<jTextField1.getText().length(); i++){
+            if(c.eOperador(jTextField1.getText().charAt(i))){
+                flag++;
+            }      
+        }
+        if(flag == 2){
+            String resultado, parcial;
+            parcial = jTextField1.getText().substring(0, jTextField1.getText().length()-1);
+            resultado = c.calcular(parcial);
+            double porcent = Double.valueOf(resultado);
+            porcent /= 100;
+            resultado = ""+porcent;
+            jTextField1.setText(resultado);
+        }
+        if(flag != 2){
+            String resultado, parcial;
+            int j = jTextField1.getText().indexOf('%');
+            parcial = jTextField1.getText().substring(0, j-1);
+            double porcent = Double.valueOf(parcial);
+            porcent /= 100;
+            resultado = ""+porcent;
+            jTextField1.setText(resultado);
+        }
+    }//GEN-LAST:event_jButtonPorcentActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -381,7 +509,6 @@ public class IGCalculadora extends javax.swing.JFrame {
     private javax.swing.JButton jButton0;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
@@ -396,6 +523,7 @@ public class IGCalculadora extends javax.swing.JFrame {
     private javax.swing.JButton jButtonEqual;
     private javax.swing.JButton jButtonMult;
     private javax.swing.JButton jButtonPoint;
+    private javax.swing.JButton jButtonPorcent;
     private javax.swing.JButton jButtonSubt;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField1;

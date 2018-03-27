@@ -10,6 +10,7 @@
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="resizable" type="boolean" value="false"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -30,7 +31,7 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -108,16 +109,18 @@
                           <Group type="103" groupAlignment="1" attributes="0">
                               <Component id="jTextField1" alignment="0" max="32767" attributes="0"/>
                               <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace min="0" pref="1" max="32767" attributes="0"/>
                                   <Component id="jButtonAC" min="-2" pref="58" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="jButton18" min="-2" pref="59" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jButtonPorcent" min="-2" pref="55" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                                   <Component id="jButtonMult" min="-2" pref="49" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
                   </Group>
-                  <EmptySpace pref="55" max="32767" attributes="0"/>
+                  <EmptySpace pref="40" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -128,7 +131,7 @@
                   <Component id="jTextField1" min="-2" pref="50" max="-2" attributes="0"/>
                   <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jButton18" alignment="3" max="32767" attributes="0"/>
+                      <Component id="jButtonPorcent" alignment="3" max="32767" attributes="0"/>
                       <Component id="jButtonAC" alignment="3" pref="35" max="32767" attributes="0"/>
                       <Component id="jButtonMult" max="32767" attributes="0"/>
                   </Group>
@@ -173,7 +176,7 @@
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
           <AuxValues>
-            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jTextField1.setHorizontalAlignment(jTextField1.RIGHT);"/>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jTextField1.setEditable(false);&#xa;jTextField1.setHorizontalAlignment(jTextField1.RIGHT);"/>
           </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButtonAC">
@@ -186,6 +189,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButtonMult">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="c" green="40" red="f0" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="*"/>
           </Properties>
           <Events>
@@ -196,16 +202,34 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="/"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonDivActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButtonDiv.setBackground(new java.awt.Color(240, 64, 12));"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButtonSubt">
           <Properties>
             <Property name="text" type="java.lang.String" value="-"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonSubtActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButtonSubt.setBackground(new java.awt.Color(240, 64, 12));"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButtonAdi">
           <Properties>
             <Property name="text" type="java.lang.String" value="+"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonAdiActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButtonAdi.setBackground(new java.awt.Color(240, 64, 12));"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton7">
           <Properties>
@@ -214,6 +238,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton7ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton7.setBackground(new java.awt.Color(0, 0, 0));&#xa;jButton7.setForeground(new java.awt.Color(240, 240, 240));"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton4">
           <Properties>
@@ -222,6 +249,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton4ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton4.setBackground(new java.awt.Color(0, 0, 0));&#xa;jButton4.setForeground(new java.awt.Color(240, 240, 240));"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton1">
           <Properties>
@@ -230,6 +260,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton1.setBackground(new java.awt.Color(0, 0, 0));&#xa;jButton1.setForeground(new java.awt.Color(240, 240, 240));"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton8">
           <Properties>
@@ -238,6 +271,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton8ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton8.setBackground(new java.awt.Color(0, 0, 0));&#xa;jButton8.setForeground(new java.awt.Color(240, 240, 240));"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton2">
           <Properties>
@@ -246,6 +282,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton2.setBackground(new java.awt.Color(0, 0, 0));&#xa;jButton2.setForeground(new java.awt.Color(240, 240, 240));"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton5">
           <Properties>
@@ -254,6 +293,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton5ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton5.setBackground(new java.awt.Color(0, 0, 0));&#xa;jButton5.setForeground(new java.awt.Color(240, 240, 240));"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton9">
           <Properties>
@@ -262,6 +304,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton9ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton9.setBackground(new java.awt.Color(0, 0, 0));&#xa;jButton9.setForeground(new java.awt.Color(240, 240, 240));"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton6">
           <Properties>
@@ -270,6 +315,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton6ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton6.setBackground(new java.awt.Color(0, 0, 0));&#xa;jButton6.setForeground(new java.awt.Color(240, 240, 240));"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton3">
           <Properties>
@@ -278,6 +326,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton3.setBackground(new java.awt.Color(0, 0, 0));&#xa;jButton3.setForeground(new java.awt.Color(240, 240, 240));"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton0">
           <Properties>
@@ -286,6 +337,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton0ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton0.setBackground(new java.awt.Color(0, 0, 0));&#xa;jButton0.setForeground(new java.awt.Color(240, 240, 240));"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButtonEqual">
           <Properties>
@@ -294,11 +348,17 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonEqualActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButtonEqual.setBackground(new java.awt.Color(240, 64, 12));"/>
+          </AuxValues>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton18">
+        <Component class="javax.swing.JButton" name="jButtonPorcent">
           <Properties>
             <Property name="text" type="java.lang.String" value="%"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonPorcentActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButtonPoint">
           <Properties>

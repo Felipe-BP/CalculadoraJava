@@ -11,11 +11,6 @@ import java.util.ArrayList;
  */
 public class Calculadora {
     
-    public static void main(String args[]){
-        Calculadora c = new Calculadora();
-        System.out.println(c.calcular("10+2"));
-    }
-    
     public String calcular(String expressao){
         String total = "";
         ArrayList<Double> numeros = new ArrayList<Double>();
@@ -60,7 +55,6 @@ public class Calculadora {
     
     public double calcular(ArrayList<Double> numeros, ArrayList<Character> operadores){
         double resultado = 0.0;
-        int j = 0;
         for(int i=0; i<numeros.size()-1; i++){
             if(resultado == 0.0){
                 double num1 = numeros.get(i);
@@ -74,6 +68,10 @@ public class Calculadora {
                         resultado = num1 - num2;
                         break;
                     case '*':
+                        if(num1==0 || num2==0){
+                            resultado = 0.0;
+                            return resultado;
+                        }
                         resultado = num1 * num2;
                         break;
                     case '/':
@@ -83,7 +81,6 @@ public class Calculadora {
                         break;
                 }
             }
-            
         }
         return resultado;
     }
